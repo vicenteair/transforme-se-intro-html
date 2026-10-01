@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre estrutura semântica - HTML</title>
+
+    <style>
+        body{background-color: #1c1c1c;
+            color: #f2f2f2;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        section{
+            background-color: deeppink;
+            border: 4px solid #3affa6;
+        }
+
+        header, footer{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/cabeçalho - Representa o conteúdo introdutório de uma página ou seção. -->
+    <header>
+        <h1>Logo</h1>
+        
+        <!-- nav/navigation - Indica uma área de navegação. -->
+        <nav>
+            <a href="">Início</a>
+            <a href="">Sobre</a>
+            <a href="">Contato</a>
+            <a href="">Carreiras</a>
+        </nav>
+    </header>
+
+    <!-- main - Representa o conteúdo principal da página. Só devemos ter apenas UM ÚNICO MAIN na página toda. -->
+    <main>
+        <section>
+            <h2>Sobre o elemento section</h2>
+            <p>Representa uma seção temática do conteúdo.</p>
+        </section>
+
+        <section>
+            <h2>Experiência</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugiat doloribus aspernatur delectus voluptate voluptatum, saepe labore quibusdam facilis eligendi eveniet, molestiae fuga officia! Aperiam corporis at modi sint sapiente!</p>
+        </section>
+
+        <section>
+            <h2>Projetos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum dolorem vitae illo suscipit nihil repellat aut rem, vero quasi consequatur ea omnis ullam. Ratione nihil inventore ullam hic a?</p>
+        </section>
+
+        <article>
+            <h2>Sobre o elemento article</h2>
+            <p>Representa um conteúdo <em>autcontido</em> e potencialmente <em>independente</em>.</p>
+
+            <h3>Exemplos</h3>
+            <ul>
+                <li>Notícias</li>
+                <li>Comentários</li>
+                <li>Card de projeto</li>
+                <li>Postagem de blog</li>
+            </ul>
+        </article>
+
+        <section>
+            <h2>Últimas notícias</h2>
+
+            <article>
+                <h3>Novo projeto lançado</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ullam, numquam maxime dolor tempore minus labore modi ducimus cupiditate nisi, aut id voluptatum doloribus perferendis eligendi earum est architecto. Impedit!</p>
+            </article>
+
+            <article>
+                <h3>Novo amor lançado no amor doce</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium a in sequi laudantium, cum soluta corporis quasi ut possimus inventore eos. Corrupti sed vel voluptate. Atque earum voluptatum excepturi harum?</p>
+            </article>
+        </section>
+
+        <article>
+            <header>
+                <h2>Como aprender HTML?</h2>
+            </header>
+
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, facere porro. Tempora saepe itaque nesciunt, ex iste ea dolorum labore eos. Quia ex dolor itaque quam minima quidem ullam libero?
+            </p>
+
+            <footer>
+                <p>Publicado em: 01/01/2026</p>
+            </footer>
+        </article>
+
+        <aside>
+            <h2>Resumo da aula</h2>
+            
+            <ul>
+                <li>Falamos sobre Details</li>
+                <li>Details com FAQ</li>
+                <li>Sobre o header</li>
+                <li>Sobre o nav</li>
+                <li>Sobre o main</li>
+                <li>Sobre o section</li>
+                <li>Sobre o article</li>
+                <li>Sobre o aside</li>
+                <li>Sobre o Amor Doce</li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- footer/rodapé - É um elemento semântico que usamos para representar informações de encerramento de uma PÁGINA ou SEÇÃO. -->
+    <footer>
+<p>&copy; 2026 Mago</p>
+
+<nav>
+    <h2>Links úteis</h2>
+    <ul>
+        <li><a href="">Sobre</a></li>
+        <li><a href="">Contato</a></li>
+        <li><a href="">Política de privacidade</a></li>
+    </ul>
+</nav>
+
+<nav>
+    <h2>Redes Sociais</h2>
+    <ul>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">LinkedIn</a></li>
+        <li><a href="">Github</a></li>
+    </ul>
+</nav>
+
+<address>
+    <h2>Entre em contato</h2>
+    <a href="mailto:mago@exemplo.com">mago@exemplo.com</a>
+    <a href="tel:+551140028922">+55 (11) 4002-8922</a>
+    <p>Rua Ali, Bairro Acolá - São Paulo - SP</p>
+</address>
+    </footer>
+</body>
+</html>

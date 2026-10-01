@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprendendo a criar formulários em HTML.">
+    <title>Formulários - HTML</title>
+
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: bisque;
+            font-family: sans-serif;
+        }
+
+        section {
+            margin-bottom: 16px;
+            background-color: #2c2c2c;
+            padding: 15px;
+            border-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulários em HTML</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2> O que são formulários?</h2>
+            <p>Formulários em HTML são elementos que permitem que os usuários insiram dados em um formulário e enviem esses dados para um servidor.</p>
+            <h2>Formulário de Contato</h2>
+
+            <p>exemplos de uso</p>
+            <ul>
+                <li>Login</li>
+                <li>Cadastro</li>
+                <li>Pesquisa</li>
+                <li>Contato</li>
+                <li>Comentários</li>
+                <li>Endereço</li>
+                <li>Inscrições em Newsletter</li>
+            </ul>
+        
+            <section>
+                <h2>Criando um formulário básico</h2>
+                <form action =""></form>
+                <label for="nome"> Nome:</label>
+                    <input type = "text" id = "nome">
+                    <button type = "submit">Enviar</button>
+                </form>
+
+                <ul>
+                    <li><strong>&lt; label &gt;</strong>: Representa um rótulo para o elemento de entrada.</li>
+
+                    <li><strong>for</strong>: Atributo que associa o rótulo ao elemento de entrada correspondente.</li>
+
+                    <li><strong>id</strong>: Atributo que identifica exclusivamente o elemento de entrada.</li>
+
+                    <li><strong>type</strong>: Atributo que especifica o tipo de elemento de entrada.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Explorando o formulário</h2>
+
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="shrek@ogro.com" required name="email">
+                    <button type="submit">Enviar</button>
+                
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="***********" required name="senha">
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea  cols="30" rows="5" id="mensagem" placeholder="Digite sua mensagem" name="mensagem"></textarea>
+
+                    <label for="newsletter"> Quero receber novidades por email </label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+
+                    <button type="submit">Enviar</button>
+                </form>
+                
+
+
+                
+            </section>
+
+
+            <section>
+                <h2>Formulários agrupados</h2>
+                <form action="">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Bob Esponja" required> 
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="bobesponja@contato.com" required><br>
+
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" placeholder="***********" required><br>
+
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input type="date" id="nascimento" name="nascimento" required><br>
+
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade" min="18" max="120" required><br>
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required><br>
+
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Endereço</legend>
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" placeholder="00000-000" required><br>
+
+                        <label for="rua">Rua:</label>
+                        <input type="text" id="rua" name="rua" placeholder="Rua do Bob Esponja" required><br>
+
+                        <label for="numero">Número:</label>
+                        <input type="text" id="numero" name="numero" placeholder="123" min="1"required><br>
+
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Fenda do Biquíni" required><br>
+
+                        <label for="estado">Estado:</label>
+                        <select name="estado" id="estado" required>
+                            <option value="">Selecione um estado</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                        </select><br>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Preferências</legend>
+                        <label>
+                            <input type="checkbox" name="interesses" value="tecnologia">
+                            Tecnologia
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" name="interesses" value="design">
+                            Design
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" name="interesses" value="programacao">
+                            Programação
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" name="interesses" value="automacao">
+                            Automação
+                        </label><br>
+
+                        <fieldset>
+                            <legend>Arquivo</legend>
+                            <input type="file" name="foto" accept="image/*"><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Termos e Condições</legend>
+                            <label>
+                                <input type="checkbox" name="termos" required>
+                                Concordo com os termos e condições.
+                            </label>
+                        </fieldset>
+
+                        <button type="submit">Criar Cadastro</button>
+
+                        <button type="reset">Limpar</button>
+                        
+                        <footer>
+                            <p>Todos os direitos reservados &copy; 2026</p>
+                        </footer>
+
+                    </fieldset>
+                </form>
+            </section>
+    </main>
+    
+</body>
+</html>

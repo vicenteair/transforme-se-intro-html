@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas - HTML</title>
+</head>
+<body>
+    <h1>Aprendendo sobre Listas</h1>
+    <p>Listas são elementos do HTML utilizados para organizar e apresentar informações de forma estruturada. Elas podem ser ordenadas, não ordenadas ou de definição, permitindo que o conteúdo seja exibido de maneira clara e fácil de entender.</p>
+
+    <h2>Listas Ordenadas</h2>
+    <p>As listas ordenadas são utilizadas quando a ordem dos itens é importante. Elas são representadas pelo elemento <code>&lt;ol&gt;</code> e cada item da lista é representado pelo elemento <code>&lt;li&gt;</code>.</p>
+    
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <h2>Listas Não Ordenadas</h2>
+    <p>As listas não ordenadas são utilizadas quando a ordem dos itens não é importante. Elas são representadas pelo elemento <code>&lt;ul&gt;</code> e cada item da lista é representado pelo elemento <code>&lt;li&gt;</code>.</p>
+    
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h2>Listas de Definição</h2>
+    <p>As listas de definição são utilizadas para definir termos e suas descrições. Elas são representadas pelo elemento <code>&lt;dl&gt;</code>, onde cada termo é representado pelo elemento <code>&lt;dt&gt;</code> e cada descrição é representada pelo elemento <code>&lt;dd&gt;</code>.</p>
+    
+    <p>dl(description list)</p>
+    <p>dt(description term)</p>
+    <p>dd(description detail)</p>
+
+    <dl>
+        <dt>Termo 1</dt>
+        <dd>Descrição do Termo 1</dd>
+        <dt>Termo 2</dt>
+        <dd>Descrição do Termo 2</dd>
+    </dl>
+
+    <hr>
+    <h2>Explorando ainda mais as Listas</h2>
+    <h3>Listas Aninhadas</h3>
+    <p>As listas aninhadas são listas dentro de outras listas. Elas podem ser utilizadas para criar hierarquias de informações, permitindo que os itens sejam organizados de forma mais detalhada. Para criar uma lista aninhada, basta adicionar uma lista dentro de um item de outra lista.</p>
+
+    <ul>
+        <li>
+            <strong>Front-end</strong>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Backend</strong>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Node.js</li>
+                <li>PHP</li>
+            </ul>
+        </li>
+
+        <h3>Formatando Listas</h3>
+        <!-- As listas podem ser formatadas utilizando CSS, permitindo que o estilo e a aparência dos itens sejam personalizados de acordo com as necessidades do projeto. -->
+        <ul type="none">
+            <li>As listas podem ser formatadas utilizando CSS, permitindo que o estilo e a aparência dos itens sejam personalizados de acordo com as necessidades do projeto.</li>
+            <li>É possível alterar a cor, o tamanho, a fonte e outros aspectos visuais das listas, tornando-as mais atraentes e adequadas ao design da página.</li>
+        </ul>
+        <hr>
+        <h3>Listas Ordenadas com Letras</h3>
+        <ol type="A" start="3">
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+        </ol>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprendendo sobre iframes no HTML">
+    <title>Sobre Iframes - HTML</title>
+</head>
+<body>
+    <h1>O que é um iframe?</h1>
+    <p>Um iframe (inline frame) é um elemento HTML que permite incorporar outra página HTML dentro da página atual.</p>
+
+    <hr>
+
+    <h2>Entendendo o elemento iframe</h2>
+    <iframe src="" width="600" height="400" title="Exemplo de Iframe"></iframe>
+
+    <ul>
+        <li>O elemento <code>iframe</code> é usado para incorporar outra página HTML dentro da página atual.</li>
+        <li>O atributo <code>src</code> especifica o URL da página a ser incorporada.</li>
+        <li>Os atributos <code>width</code> e <code>height</code> definem o tamanho do iframe.</li>
+        <li>O atributo <code>title</code> fornece uma descrição do conteúdo do iframe para acessibilidade.</li>
+    </ul>
+
+    <h3>Exemplo de iframe incorporando uma página externa</h3>
+    <iframe src="https://www.example.com" width="600" height="400" title="Exemplo de Iframe com página externa"></iframe>
+
+    <h3>Exemplo de iframe incorporando uma página interna</h3>
+    <iframe src="03-listas.html" width="800" height="600" frameborder="5" title="Exemplo de Iframe com página interna"></iframe>
+
+    <hr>
+
+    <h2>Incorporando o Youtube</h2>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/WJRmwmtFV7g?si=nSZSfKqzvi2DXEQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+   <h3> Explicando tags do iframe do youtube</h3>
+    <ul>
+          <li>O atributo <code>src</code> contém o link do vídeo do YouTube que será incorporado.</li>
+          <li>O atributo <code>allowfullscreen</code> permite que o vídeo seja exibido em tela cheia.</li>
+          <li>O atributo <code>frameborder</code> define a largura da borda do iframe (0 significa sem borda).</li>
+          <li>O atributo <code>allow</code> especifica permissões para o conteúdo do iframe, como autoplay e clipboard-write.</li>
+          <li>O atributo <code>referrerpolicy</code> define como o referer é enviado ao carregar o iframe.</li>
+          <li>O atributo <code>encrypted-media</code> permite a reprodução de mídia criptografada.</li>
+          <li>O atributo <code>gyroscope</code> permite que o iframe acesse os dados do giroscópio do dispositivo.</li>
+          <li>O atributo <code>picture-in-picture</code> permite que o vídeo seja exibido em uma janela flutuante enquanto o usuário navega em outras páginas.</li>
+          <li>O atributo <code>web-share</code> permite que o conteúdo do iframe seja compartilhado usando a API de compartilhamento da web.</li>
+          <li>O atributo <code>title</code> fornece uma descrição do conteúdo do iframe para acessibilidade.</li>
+          <li>O atributo <code>referrerpolicy</code> define como o referer é enviado ao carregar o iframe.</li>
+          <li>O atributo <code>loading</code> define como o iframe é carregado (lazy para carregamento lento).</li>
+        
+          <hr>
+          <h2>Incorporando uma mapa no HTML</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.1234567890123!2d-46.6333086845000!3d-23.5505201845000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8b8b8b8b8%3A0x123456789abcdef0!2sSão%20Paulo%2C%20SP%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1612345678901" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     </ul>
+</body>
+</html>
